@@ -1,13 +1,19 @@
 package com.glriverside.xgqin.ggnews;
 
 public final class Constants {
+
+    private Constants() {
+    }
+
     public static final int NEWS_NUM = 10;
     public static String SERVER_URL = "http://api.tianapi.com/";
     public static String ALL_NEWS_PATH = "allnews/";
+    public static String GENERAL_NEWS_PATH = "generalnews/";
 
     public static String API_KEY = "eb4825d894983c15353a40e0b4efd107";
 
     public static String ALL_NEWS_URL = SERVER_URL + ALL_NEWS_PATH;
+    public static String GENERAL_NEWS_URL = SERVER_URL + GENERAL_NEWS_PATH;
 
     public static int NEWS_COL5 = 5;
     public static int NEWS_COL7 = 7;

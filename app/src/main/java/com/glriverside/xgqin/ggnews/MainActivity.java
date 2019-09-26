@@ -106,8 +106,6 @@ public class MainActivity extends AppCompatActivity {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                Gson gson = new Gson();
-                String reqJsonString = "";
                 NewsRequest requestObj = new NewsRequest();
 
                 requestObj.setCol(mCols[mCurrentColIndex]);
@@ -116,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
                 String urlParams = requestObj.toString();
 
                 Request request = new Request.Builder()
-                        .url(Constants.ALL_NEWS_URL + urlParams)
+                        .url(Constants.GENERAL_NEWS_URL + urlParams)
                         .get().build();
                 try {
                     OkHttpClient client = new OkHttpClient();
